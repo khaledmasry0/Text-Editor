@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Smart Icons -->
+    <link rel="stylesheet" href="./smart/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="text-editor.css" />
+  </head>
+  <body>
+    <section class="text-editor">
+      <article class="container">
+        <article class="options">
+          <!-- Text Format -->
+          <button id="bold" class="option-button format">
+            <i class="icon-bold"></i>
+          </button>
+
+          <button id="italic" class="option-button format">
+            <i class="icon-italic"></i>
+          </button>
+
+          <button id="underline" class="option-button format">
+            <i class="icon-underline"></i>
+          </button>
+
+          <button id="strikethrough" class="option-button format">
+            <i class="icon-strikethrough"></i>
+          </button>
+
+          <button id="subscript" class="option-button script">
+            <i class="icon-subscript"></i>
+          </button>
+
+          <!-- List -->
+          <button id="insertOrderedList" class="option-button">
+            <article class="icon-list-numbered"></article>
+          </button>
+          <button id="insertUnorderedList" class="option-button">
+            <i class="icon-list2"></i>
+          </button>
+
+          <!-- Undo/Redo -->
+          <button id="undo" class="option-button">
+            <i class="icon-undo"></i>
+          </button>
+          <button id="redo" class="option-button">
+            <i class="icon-redo"></i>
+          </button>
+
+          <!-- Link -->
+          <button id="createLink" class="adv-option-button">
+            <i class="icon-link"></i>
+          </button>
+          <button id="unlink" class="option-button">
+            <i class="icon-link unlink"></i>
+          </button>
+
+          <!-- Alignment -->
+          <button id="justifyLeft" class="option-button align">
+            <i class="icon-paragraph-left"></i>
+          </button>
+          <button id="justifyCenter" class="option-button align">
+            <i class="icon-paragraph-center"></i>
+          </button>
+          <button id="justifyRight" class="option-button align">
+            <i class="icon-paragraph-right"></i>
+          </button>
+          <button id="justifyFull" class="option-button align">
+            <i class="icon-paragraph-justify"></i>
+          </button>
+          <button id="indent" class="option-button spacing">
+            <i class="icon-indent-increase"></i>
+          </button>
+          <button id="outdent" class="option-button spacing">
+            <i class="icon-indent-decrease"></i>
+          </button>
+
+          <!-- Headings -->
+          <select id="formatBlock" class="adv-option-button">
+            <option value="H1">H</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="H6">H6</option>
+          </select>
+
+          <!-- Font -->
+          <select id="fontName" class="adv-option-button"></select>
+          <select id="fontSize" class="adv-option-button"></select>
+
+          <!-- Color -->
+          <article class="input-wrapper">
+            <input type="color" id="foreColor" class="adv-option-button" />
+            <label for="foreColor">F</label>
+          </article>
+          <article class="input-wrapper">
+            <input
+              type="color"
+              value="#ffffff"
+              id="backColor"
+              class="adv-option-button"
+            />
+            <label for="backColor">bg</label>
+          </article>
+        </article>
+        <article id="text-input" contenteditable="true"></article>
+      </article>
+      <textarea class="output"></textarea>
+    </section>
+    <!--Script-->
+    <script src="text-editor.js"></script>
+  </body>
+</html>
